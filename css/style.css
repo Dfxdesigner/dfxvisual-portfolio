@@ -1,0 +1,172 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #fff;
+  background: #111;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+header nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #444;
+  border-radius: 30px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.about, .portfolio, .services, .contact {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.about {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.about img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.portfolio .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.portfolio .item {
+  background: #222;
+  border-radius: 10px;
+  padding: 15px;
+  transition: 0.3s;
+}
+
+.portfolio .item:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.services ul {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+
+.services li {
+  background: #222;
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #222;
+  color: #fff;
+}
+
+.contact button {
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  background: #444;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.contact .social {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  font-size: 0.9rem;
+  color: #aaa;
+}
