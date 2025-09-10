@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DfxVisual - Portfólio</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <!-- Header -->
-  <header>
+  <header id="header">
     <div class="logo">dfxvisual</div>
     <nav>
       <ul>
@@ -23,12 +24,14 @@
 
   <!-- Home -->
   <section id="home" class="hero">
-    <h1>Transformando a fantasia na realidade.</h1>
-    <a href="#portfolio" class="btn">Ver Portfólio</a>
+    <div data-aos="fade-up">
+      <h1>Transformando a fantasia na realidade.</h1>
+      <a href="#portfolio" class="btn">Ver Portfólio</a>
+    </div>
   </section>
 
   <!-- About -->
-  <section id="about" class="about">
+  <section id="about" class="about" data-aos="fade-right">
     <img src="img/perfil.jpg" alt="Foto de perfil">
     <div>
       <h2>Sobre mim</h2>
@@ -38,19 +41,19 @@
 
   <!-- Portfolio -->
   <section id="portfolio" class="portfolio">
-    <h2>Portfólio</h2>
+    <h2 data-aos="fade-up">Portfólio</h2>
     <div class="grid">
-      <div class="item">
+      <div class="item" data-aos="zoom-in">
         <img src="img/projeto1.jpg" alt="Projeto 1">
         <h3>Projeto 1</h3>
         <p>Descrição breve do projeto.</p>
       </div>
-      <div class="item">
+      <div class="item" data-aos="zoom-in" data-aos-delay="200">
         <img src="img/projeto2.jpg" alt="Projeto 2">
         <h3>Projeto 2</h3>
         <p>Descrição breve do projeto.</p>
       </div>
-      <div class="item">
+      <div class="item" data-aos="zoom-in" data-aos-delay="400">
         <img src="img/projeto3.jpg" alt="Projeto 3">
         <h3>Projeto 3</h3>
         <p>Descrição breve do projeto.</p>
@@ -59,7 +62,7 @@
   </section>
 
   <!-- Services -->
-  <section id="services" class="services">
+  <section id="services" class="services" data-aos="fade-up">
     <h2>Serviços</h2>
     <ul>
       <li>🎨 Modelagem 3D</li>
@@ -70,7 +73,7 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="contact">
+  <section id="contact" class="contact" data-aos="fade-up">
     <h2>Contato</h2>
     <form>
       <input type="text" placeholder="Nome" required>
@@ -90,6 +93,13 @@
     <p>&copy; 2025 DfxVisual - Todos os direitos reservados.</p>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/script.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>
